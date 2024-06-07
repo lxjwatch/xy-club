@@ -1,8 +1,29 @@
 package com.xxxy.subject.domain.service;
 
 import com.xxxy.subject.domain.entity.SubjectCategoryBO;
+import com.xxxy.subject.domain.entity.SubjectLabelBO;
 import com.xxxy.subject.infra.basic.entity.SubjectCategory;
 
+import java.util.List;
 public interface SubjectCategoryDomainService {
-    void add(SubjectCategoryBO subjectCategorybo);
+
+    /**
+     * 新增分类
+     */
+    void add(SubjectCategoryBO subjectCategoryBO);
+
+    /**
+     * 查询岗位大类
+     */
+    List<SubjectCategoryBO> queryCategory(SubjectCategoryBO subjectCategoryBO);
+
+    /**
+     * 更新分类
+     */
+    Boolean update(SubjectCategoryBO subjectCategoryBO);
+
+    /**
+     * 删除分类
+     */
+    Boolean delete(SubjectCategoryBO subjectCategoryBO);
 }

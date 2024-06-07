@@ -8,7 +8,7 @@ import javax.annotation.Generated;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2024-06-05T17:11:47+0800",
+    date = "2024-06-06T15:30:03+0800",
     comments = "version: 1.4.2.Final, compiler: javac, environment: Java 1.8.0_362 (Amazon.com Inc.)"
 )
 public class SubjectCategoryDTOConverterImpl implements SubjectCategoryDTOConverter {
@@ -40,6 +40,7 @@ public class SubjectCategoryDTOConverterImpl implements SubjectCategoryDTOConver
         subjectCategoryBO.setCategoryType( subjectCategoryDTO.getCategoryType() );
         subjectCategoryBO.setImageUrl( subjectCategoryDTO.getImageUrl() );
         subjectCategoryBO.setParentId( subjectCategoryDTO.getParentId() );
+        subjectCategoryBO.setCount( subjectCategoryDTO.getCount() );
 
         return subjectCategoryBO;
     }
@@ -57,6 +58,7 @@ public class SubjectCategoryDTOConverterImpl implements SubjectCategoryDTOConver
         subjectCategoryDTO.setCategoryType( subjectCategoryBO.getCategoryType() );
         subjectCategoryDTO.setImageUrl( subjectCategoryBO.getImageUrl() );
         subjectCategoryDTO.setParentId( subjectCategoryBO.getParentId() );
+        subjectCategoryDTO.setCount( subjectCategoryBO.getCount() );
 
         return subjectCategoryDTO;
     }

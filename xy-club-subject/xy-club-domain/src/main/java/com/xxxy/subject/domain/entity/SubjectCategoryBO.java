@@ -6,12 +6,13 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
+import java.util.List;
 
 /**
  * 题目分类(SubjectCategory)实体类
  *
  * @author lxj
- * @since 2024-06-05 11:17:36
+ * @since 2024-10-05
  */
 @Data
 @AllArgsConstructor
@@ -38,6 +39,14 @@ public class SubjectCategoryBO implements Serializable {
      * 父级id
      */
     private Long parentId;
+    /**
+     * 数量
+     */
+    private Integer count;
+    /**
+     * 标签bo数量
+     */
+    private List<SubjectLabelBO> labelBOList;
 
 
 }

@@ -1,6 +1,8 @@
 package com.xxxy.subject.application.dto;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 import java.util.List;
@@ -8,10 +10,12 @@ import java.util.List;
 /**
  * 题目分类
  *
- * @author: ChickenWing
+ * @author: lxj
  * @date: 2023/10/3
  */
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class SubjectCategoryDTO implements Serializable {
 
     /**
