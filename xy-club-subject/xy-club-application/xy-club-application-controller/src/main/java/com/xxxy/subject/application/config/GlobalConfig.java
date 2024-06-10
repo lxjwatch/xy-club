@@ -19,6 +19,9 @@ import java.util.List;
 @Configuration
 public class GlobalConfig extends WebMvcConfigurationSupport {
 
+    /**
+     * 配置消息转换器
+     */
     @Override
     protected void configureMessageConverters(List<HttpMessageConverter<?>> converters) {
         super.configureMessageConverters(converters);
@@ -29,7 +32,8 @@ public class GlobalConfig extends WebMvcConfigurationSupport {
         ObjectMapper objectMapper = new ObjectMapper();
         objectMapper.configure(SerializationFeature.FAIL_ON_EMPTY_BEANS, false);
         objectMapper.setSerializationInclusion(JsonInclude.Include.NON_NULL);
-        MappingJackson2HttpMessageConverter converter = new MappingJackson2HttpMessageConverter(objectMapper);
+        MappingJackson2HttpMessageConverter converter = new
+                MappingJackson2HttpMessageConverter(objectMapper);
         return converter;
     }
 

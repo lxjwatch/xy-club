@@ -1,4 +1,4 @@
-server:
+  server:
   port: 3010
 
 spring:
@@ -52,7 +52,7 @@ spring:
 mybatis-plus:
   configuration:
     map-underscore-to-camel-case: true
-#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #开启sql日志
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #开启sql日志
   #    log-impl: org.apache.ibatis.logging.nologging.NoLoggingImpl
   mapper-locations:
     - classpath:mapper/**/*.xml
