@@ -1,6 +1,5 @@
 package com.xxxy.subject.infra.basic.service;
 
-
 import com.xxxy.subject.infra.basic.entity.SubjectLabel;
 
 import java.util.List;
@@ -8,7 +7,7 @@ import java.util.List;
 /**
  * 题目标签表(SubjectLabel)表服务接口
  *
- * @author makejava
+ * @author lxj
  * @since 2023-10-03 21:50:30
  */
 public interface SubjectLabelService {

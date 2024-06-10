@@ -9,24 +9,25 @@ import java.util.List;
 /**
  * 分页返回实体
  *
- * @author: ChickenWing
+ * @author: lxj
  * @date: 2023/10/5
  */
 @Data
 public class PageResult<T> implements Serializable {
 
+    // 当前页
     private Integer pageNo = 1;
-
+    // 每页显示数量
     private Integer pageSize = 20;
-
+    // 总记录数
     private Integer total = 0;
-
+    // 总页数
     private Integer totalPages = 0;
-
+    // 结果集
     private List<T> result = Collections.emptyList();
-
+    // 开始行
     private Integer start = 1;
-
+    // 结束行
     private Integer end = 0;
 
     public void setRecords(List<T> result) {
@@ -43,8 +44,8 @@ public class PageResult<T> implements Serializable {
         } else {
             this.totalPages = 0;
         }
-        this.start = (this.pageSize > 0 ? (this.pageNo - 1) * this.pageSize : 0) + 1;
-        this.end = (this.start - 1 + this.pageSize * (this.pageNo > 0 ? 1 : 0));
+        this.start = (this.pageSize > 0 ? (this.pageNo - 1) * this.pageSize : 0 ) + 1;
+        this.end = this.start - 1 + this.pageSize * (this.pageNo > 0 ? 1 : 0);
     }
 
     public void setPageSize(Integer pageSize) {

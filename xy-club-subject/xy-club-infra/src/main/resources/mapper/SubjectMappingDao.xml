@@ -19,7 +19,7 @@
         select
           id, subject_id, category_id, label_id, created_by, created_time, update_by, update_time, is_deleted
         from subject_mapping
-        where id = #{id}
+        where  = #{id}
     </select>
 
     <!--查询指定行数据-->
@@ -197,7 +197,7 @@
 
     <!--通过主键删除-->
     <delete id="deleteById">
-        delete from subject_mapping where id  = #{id}
+        delete from subject_mapping where  = #{id}
     </delete>
 
 </mapper>

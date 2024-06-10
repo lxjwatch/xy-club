@@ -1,6 +1,5 @@
 package com.xxxy.subject.domain.convert;
 
-
 import com.xxxy.subject.domain.entity.SubjectLabelBO;
 import com.xxxy.subject.infra.basic.entity.SubjectLabel;
 import org.mapstruct.Mapper;

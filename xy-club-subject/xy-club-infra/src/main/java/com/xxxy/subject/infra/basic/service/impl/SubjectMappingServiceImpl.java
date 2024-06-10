@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * 题目分类关系表(SubjectMapping)表服务实现类
  *
- * @author makejava
+ * @author lxj
  * @since 2023-10-03 22:17:07
  */
 @Service("subjectMappingService")
@@ -67,4 +67,10 @@ public class SubjectMappingServiceImpl implements SubjectMappingService {
     public List<SubjectMapping> queryLabelId(SubjectMapping subjectMapping) {
         return this.subjectMappingDao.queryDistinctLabelId(subjectMapping);
     }
+
+    @Override
+    public void batchInsert(List<SubjectMapping> mappingList) {
+        this.subjectMappingDao.insertBatch(mappingList);
+    }
+
 }

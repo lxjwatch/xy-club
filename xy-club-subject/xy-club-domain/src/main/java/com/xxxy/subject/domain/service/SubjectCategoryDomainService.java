@@ -1,10 +1,10 @@
 package com.xxxy.subject.domain.service;
 
 import com.xxxy.subject.domain.entity.SubjectCategoryBO;
-import com.xxxy.subject.domain.entity.SubjectLabelBO;
-import com.xxxy.subject.infra.basic.entity.SubjectCategory;
 
 import java.util.List;
+
+
 public interface SubjectCategoryDomainService {
 
     /**

@@ -1,11 +1,8 @@
 package com.xxxy.subject.application.dto;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
-import java.util.List;
 
 /**
  * 题目分类
@@ -14,8 +11,6 @@ import java.util.List;
  * @date: 2023/10/3
  */
 @Data
-@AllArgsConstructor
-@NoArgsConstructor
 public class SubjectCategoryDTO implements Serializable {
 
     /**
@@ -42,16 +37,6 @@ public class SubjectCategoryDTO implements Serializable {
      * 父级id
      */
     private Long parentId;
-
-    /**
-     * 数量
-     */
-    private Integer count;
-
-    /**
-     * 标签信息
-     */
-    private List<SubjectLabelDTO> labelDTOList;
 
 }
 

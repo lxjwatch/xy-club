@@ -1,16 +1,14 @@
 package com.xxxy.subject.infra.basic.service;
 
-
 import com.xxxy.subject.infra.basic.entity.SubjectCategory;
 
 import java.util.List;
-
 
 /**
  * 题目分类(SubjectCategory)表服务接口
  *
  * @author lxj
- * @since 2023-10-05 11:17:37
+ * @since 2023-10-01 21:50:03
  */
 public interface SubjectCategoryService {
 

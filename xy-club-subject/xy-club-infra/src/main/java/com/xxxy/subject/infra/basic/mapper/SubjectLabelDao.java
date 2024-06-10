@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * 题目标签表(SubjectLabel)表数据库访问层
  *
- * @author makejava
+ * @author lxj
  * @since 2023-10-03 21:50:29
  */
 public interface SubjectLabelDao {

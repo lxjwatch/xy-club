@@ -9,46 +9,41 @@ import com.xxxy.subject.domain.entity.SubjectCategoryBO;
 import com.xxxy.subject.domain.service.SubjectCategoryDomainService;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
 import java.util.List;
 
 /**
- * 刷题controller
+ * 刷题分类controller
  *
- * @author lxj
- * @date 2023/10/1
+ * @author: lxj
+ * @date: 2023/10/1
  */
 @RestController
 @RequestMapping("/subject/category")
 @Slf4j
 public class SubjectCategoryController {
+
     @Resource
     private SubjectCategoryDomainService subjectCategoryDomainService;
+
     /**
      * 新增分类
      */
     @PostMapping("/add")
-    public Result<Boolean> test(@RequestBody SubjectCategoryDTO subjectCategoryDTO) {
+    public Result<Boolean> add(@RequestBody SubjectCategoryDTO subjectCategoryDTO) {
         try {
-            //打印日志
             if (log.isInfoEnabled()) {
-                log.info("SubjectCategoryController.add.dto:{}",
-                        JSON.toJSONString(subjectCategoryDTO));
+                log.info("SubjectCategoryController.add.dto:{}", JSON.toJSONString(subjectCategoryDTO));
             }
-            //校验参数
-            Preconditions.checkNotNull(subjectCategoryDTO.getCategoryType(),
-                    "分类类型不能为空");
-            Preconditions.checkArgument(!StringUtils
-                    .isBlank(subjectCategoryDTO.getCategoryName()),
-                    "分类名称不能为空");
-            Preconditions.checkNotNull(subjectCategoryDTO.getParentId(),
-                    "分类父级id不能为空");
-            //DTO转BO
-            SubjectCategoryBO subjectCategoryBO = SubjectCategoryDTOConverter.INSTANCE
-                    .convertDtoToCategoryBO(subjectCategoryDTO);
-            //调用领域服务,插入时转换BO为Category
+            Preconditions.checkNotNull(subjectCategoryDTO.getCategoryType(), "分类类型不能为空");
+            Preconditions.checkArgument(!StringUtils.isBlank(subjectCategoryDTO.getCategoryName()), "分类名称不能为空");
+            Preconditions.checkNotNull(subjectCategoryDTO.getParentId(), "分类父级id不能为空");
+            SubjectCategoryBO subjectCategoryBO = SubjectCategoryDTOConverter.INSTANCE.convertDtoToCategoryBO(subjectCategoryDTO);
             subjectCategoryDomainService.add(subjectCategoryBO);
             return Result.ok(true);
         } catch (Exception e) {
@@ -56,9 +51,7 @@ public class SubjectCategoryController {
             return Result.fail("新增分类失败");
         }
     }
-    /**
-     * 查询岗位大类
-     */
+
     @PostMapping("/queryPrimaryCategory")
     public Result<List<SubjectCategoryDTO>> queryPrimaryCategory(@RequestBody SubjectCategoryDTO subjectCategoryDTO) {
         try {
@@ -72,11 +65,9 @@ public class SubjectCategoryController {
             log.error("SubjectCategoryController.queryPrimaryCategory.error:{}", e.getMessage(), e);
             return Result.fail("查询失败");
         }
+
     }
 
-    /**
-     * 查询题目信息
-     */
     @PostMapping("/queryCategoryByPrimary")
     public Result<List<SubjectCategoryDTO>> queryCategoryByPrimary(@RequestBody SubjectCategoryDTO subjectCategoryDTO) {
         try {
@@ -115,7 +106,9 @@ public class SubjectCategoryController {
             log.error("SubjectCategoryController.update.error:{}", e.getMessage(), e);
             return Result.fail("更新分类失败");
         }
+
     }
+
     /**
      * 删除分类
      */

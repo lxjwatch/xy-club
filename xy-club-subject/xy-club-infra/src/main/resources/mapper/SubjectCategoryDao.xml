@@ -12,16 +12,19 @@
         <result property="createdTime" column="created_time" jdbcType="TIMESTAMP"/>
         <result property="updateBy" column="update_by" jdbcType="VARCHAR"/>
         <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
-        <result property="isDeleted" column="is_deleted" jdbcType="INTEGER"/>
     </resultMap>
-    <sql id="columns">
-        id, category_name, category_type, image_url, parent_id, created_by, created_time, update_by, update_time, is_deleted
-    </sql>
 
     <!--查询单个-->
     <select id="queryById" resultMap="SubjectCategoryMap">
-        select
-          id, category_name, category_type, image_url, parent_id, created_by, created_time, update_by, update_time, is_deleted
+        select id,
+               category_name,
+               category_type,
+               image_url,
+               parent_id,
+               created_by,
+               created_time,
+               update_by,
+               update_time
         from subject_category
         where id = #{id}
     </select>
@@ -29,7 +32,7 @@
     <!--查询指定行数据-->
     <select id="queryAllByLimit" resultMap="SubjectCategoryMap">
         select
-          id, category_name, category_type, image_url, parent_id, created_by, created_time, update_by, update_time, is_deleted
+        id, category_name, category_type, image_url, parent_id, created_by, created_time, update_by, update_time
         from subject_category
         <where>
             <if test="id != null">
@@ -58,9 +61,6 @@
             </if>
             <if test="updateTime != null">
                 and update_time = #{updateTime}
-            </if>
-            <if test="isDeleted != null">
-                and is_deleted = #{isDeleted}
             </if>
         </where>
         limit #{pageable.offset}, #{pageable.pageSize}
@@ -98,14 +98,11 @@
             <if test="updateTime != null">
                 and update_time = #{updateTime}
             </if>
-            <if test="isDeleted != null">
-                and is_deleted = #{isDeleted}
-            </if>
         </where>
     </select>
 
     <select id="queryCategory" resultMap="SubjectCategoryMap">
-        select <include refid="columns"/> from subject_category
+        select * from subject_category
         <where>
             <if test="id != null">
                 and id = #{id}
@@ -139,33 +136,32 @@
             </if>
         </where>
     </select>
-<!--  查找  -->
-    <select id="querySubjectCount" resultType="java.lang.Integer">
-        select count(distinct subject_id)
-        from subject_mapping a,
-             subject_label b
-        where a.label_id = b.id
-          and b.category_id = #{id}
-    </select>
+
     <!--新增所有列-->
     <insert id="insert" keyProperty="id" useGeneratedKeys="true">
-        insert into subject_category(category_name, category_type, image_url, parent_id, created_by, created_time, update_by, update_time, is_deleted)
-        values (#{categoryName}, #{categoryType}, #{imageUrl}, #{parentId}, #{createdBy}, #{createdTime}, #{updateBy}, #{updateTime}, #{isDeleted})
+        insert into subject_category(category_name, category_type, image_url, parent_id, created_by, created_time,
+                                     update_by, update_time, is_deleted)
+        values (#{categoryName}, #{categoryType}, #{imageUrl}, #{parentId}, #{createdBy}, #{createdTime}, #{updateBy},
+                #{updateTime}, #{isDeleted})
     </insert>
 
     <insert id="insertBatch" keyProperty="id" useGeneratedKeys="true">
-        insert into subject_category(category_name, category_type, image_url, parent_id, created_by, created_time, update_by, update_time, is_deleted)
+        insert into subject_category(category_name, category_type, image_url, parent_id, created_by, created_time,
+        update_by, update_time)
         values
         <foreach collection="entities" item="entity" separator=",">
-        (#{entity.categoryName}, #{entity.categoryType}, #{entity.imageUrl}, #{entity.parentId}, #{entity.createdBy}, #{entity.createdTime}, #{entity.updateBy}, #{entity.updateTime}, #{entity.isDeleted})
+            (#{entity.categoryName}, #{entity.categoryType}, #{entity.imageUrl}, #{entity.parentId},
+            #{entity.createdBy}, #{entity.createdTime}, #{entity.updateBy}, #{entity.updateTime})
         </foreach>
     </insert>
 
     <insert id="insertOrUpdateBatch" keyProperty="id" useGeneratedKeys="true">
-        insert into subject_category(category_name, category_type, image_url, parent_id, created_by, created_time, update_by, update_time, is_deleted)
+        insert into subject_category(category_name, category_type, image_url, parent_id, created_by, created_time,
+        update_by, update_time)
         values
         <foreach collection="entities" item="entity" separator=",">
-            (#{entity.categoryName}, #{entity.categoryType}, #{entity.imageUrl}, #{entity.parentId}, #{entity.createdBy}, #{entity.createdTime}, #{entity.updateBy}, #{entity.updateTime}, #{entity.isDeleted})
+            (#{entity.categoryName}, #{entity.categoryType}, #{entity.imageUrl}, #{entity.parentId},
+            #{entity.createdBy}, #{entity.createdTime}, #{entity.updateBy}, #{entity.updateTime})
         </foreach>
         on duplicate key update
         category_name = values(category_name),
@@ -175,8 +171,7 @@
         created_by = values(created_by),
         created_time = values(created_time),
         update_by = values(update_by),
-        update_time = values(update_time),
-        is_deleted = values(is_deleted)
+        update_time = values(update_time)
     </insert>
 
     <!--通过主键修改数据-->
@@ -216,7 +211,9 @@
 
     <!--通过主键删除-->
     <delete id="deleteById">
-        delete from subject_category where id = #{id}
+        delete
+        from subject_category
+        where id = #{id}
     </delete>
 
 </mapper>

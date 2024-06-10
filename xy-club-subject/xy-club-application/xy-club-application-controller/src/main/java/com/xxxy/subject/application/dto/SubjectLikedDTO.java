@@ -10,7 +10,7 @@ import java.util.Date;
 /**
  * 题目点赞表 dto
  *
- * @author jingdianjichi
+ * @author xxxy
  * @since 2024-01-07 23:08:45
  */
 @EqualsAndHashCode(callSuper = true)

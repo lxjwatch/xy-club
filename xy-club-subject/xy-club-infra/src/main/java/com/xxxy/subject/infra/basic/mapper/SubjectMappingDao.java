@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * 题目分类关系表(SubjectMapping)表数据库访问层
  *
- * @author makejava
+ * @author lxj
  * @since 2023-10-03 22:17:07
  */
 public interface SubjectMappingDao {
@@ -72,7 +72,7 @@ public interface SubjectMappingDao {
     /**
      * 通过主键删除数据
      *
-     * @param id
+     * @param 主键
      * @return 影响行数
      */
     int deleteById(int id);

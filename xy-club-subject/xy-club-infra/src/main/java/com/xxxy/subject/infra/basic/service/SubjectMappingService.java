@@ -1,6 +1,5 @@
 package com.xxxy.subject.infra.basic.service;
 
-
 import com.xxxy.subject.infra.basic.entity.SubjectMapping;
 
 import java.util.List;
@@ -8,7 +7,7 @@ import java.util.List;
 /**
  * 题目分类关系表(SubjectMapping)表服务接口
  *
- * @author makejava
+ * @author lxj
  * @since 2023-10-03 22:17:07
  */
 public interface SubjectMappingService {
@@ -47,5 +46,10 @@ public interface SubjectMappingService {
      * 查询标签id
      */
     List<SubjectMapping> queryLabelId(SubjectMapping subjectMapping);
+
+    /**
+     * 批量插入
+     */
+    void batchInsert(List<SubjectMapping> mappingList);
 
 }

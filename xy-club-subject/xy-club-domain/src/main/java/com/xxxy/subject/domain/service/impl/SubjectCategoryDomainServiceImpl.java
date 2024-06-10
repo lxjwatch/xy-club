@@ -3,18 +3,14 @@ package com.xxxy.subject.domain.service.impl;
 import com.alibaba.fastjson.JSON;
 import com.xxxy.subject.common.enums.IsDeletedFlagEnum;
 import com.xxxy.subject.domain.convert.SubjectCategoryConverter;
-import com.xxxy.subject.domain.convert.SubjectLabelConverter;
 import com.xxxy.subject.domain.entity.SubjectCategoryBO;
-import com.xxxy.subject.domain.entity.SubjectLabelBO;
 import com.xxxy.subject.domain.service.SubjectCategoryDomainService;
 import com.xxxy.subject.infra.basic.entity.SubjectCategory;
-import com.xxxy.subject.infra.basic.entity.SubjectLabel;
 import com.xxxy.subject.infra.basic.service.SubjectCategoryService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
-import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -24,15 +20,15 @@ public class SubjectCategoryDomainServiceImpl implements SubjectCategoryDomainSe
     @Resource
     private SubjectCategoryService subjectCategoryService;
 
-
     @Override
-    public void add(SubjectCategoryBO subjectCategorybo) {
-        //转换BO为Category
+    public void add(SubjectCategoryBO subjectCategoryBO) {
+        if (log.isInfoEnabled()) {
+            log.info("SubjectCategoryController.add.bo:{}", JSON.toJSONString(subjectCategoryBO));
+        }
         SubjectCategory subjectCategory = SubjectCategoryConverter.INSTANCE
-                .convertBoToCategory(subjectCategorybo);
+                .convertBoToCategory(subjectCategoryBO);
         subjectCategory.setIsDeleted(IsDeletedFlagEnum.UN_DELETED.getCode());
         subjectCategoryService.insert(subjectCategory);
-
     }
 
     @Override
@@ -57,6 +53,7 @@ public class SubjectCategoryDomainServiceImpl implements SubjectCategoryDomainSe
         int count = subjectCategoryService.update(subjectCategory);
         return count > 0;
     }
+
     @Override
     public Boolean delete(SubjectCategoryBO subjectCategoryBO) {
         SubjectCategory subjectCategory = SubjectCategoryConverter.INSTANCE
@@ -65,4 +62,5 @@ public class SubjectCategoryDomainServiceImpl implements SubjectCategoryDomainSe
         int count = subjectCategoryService.update(subjectCategory);
         return count > 0;
     }
+
 }
