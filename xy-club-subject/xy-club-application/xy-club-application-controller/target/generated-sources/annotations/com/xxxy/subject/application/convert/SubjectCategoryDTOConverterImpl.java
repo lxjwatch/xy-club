@@ -8,7 +8,7 @@ import javax.annotation.Generated;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2024-06-06T15:30:03+0800",
+    date = "2024-06-10T09:12:22+0800",
     comments = "version: 1.4.2.Final, compiler: javac, environment: Java 1.8.0_362 (Amazon.com Inc.)"
 )
 public class SubjectCategoryDTOConverterImpl implements SubjectCategoryDTOConverter {
@@ -21,7 +21,7 @@ public class SubjectCategoryDTOConverterImpl implements SubjectCategoryDTOConver
 
         List<SubjectCategoryDTO> list = new ArrayList<SubjectCategoryDTO>( subjectCategoryDTO.size() );
         for ( SubjectCategoryBO subjectCategoryBO : subjectCategoryDTO ) {
-            list.add( convertBoToCategoryDTO( subjectCategoryBO ) );
+            list.add( subjectCategoryBOToSubjectCategoryDTO( subjectCategoryBO ) );
         }
 
         return list;
@@ -40,13 +40,11 @@ public class SubjectCategoryDTOConverterImpl implements SubjectCategoryDTOConver
         subjectCategoryBO.setCategoryType( subjectCategoryDTO.getCategoryType() );
         subjectCategoryBO.setImageUrl( subjectCategoryDTO.getImageUrl() );
         subjectCategoryBO.setParentId( subjectCategoryDTO.getParentId() );
-        subjectCategoryBO.setCount( subjectCategoryDTO.getCount() );
 
         return subjectCategoryBO;
     }
 
-    @Override
-    public SubjectCategoryDTO convertBoToCategoryDTO(SubjectCategoryBO subjectCategoryBO) {
+    protected SubjectCategoryDTO subjectCategoryBOToSubjectCategoryDTO(SubjectCategoryBO subjectCategoryBO) {
         if ( subjectCategoryBO == null ) {
             return null;
         }
@@ -58,7 +56,6 @@ public class SubjectCategoryDTOConverterImpl implements SubjectCategoryDTOConver
         subjectCategoryDTO.setCategoryType( subjectCategoryBO.getCategoryType() );
         subjectCategoryDTO.setImageUrl( subjectCategoryBO.getImageUrl() );
         subjectCategoryDTO.setParentId( subjectCategoryBO.getParentId() );
-        subjectCategoryDTO.setCount( subjectCategoryBO.getCount() );
 
         return subjectCategoryDTO;
     }

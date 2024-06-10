@@ -14,6 +14,7 @@ import org.springframework.context.annotation.ComponentScan;
  */
 @SpringBootApplication
 @ComponentScan("com.xxxy")
+@MapperScan("com.xxxy.subject.infra.basic.mapper")
 public class SubjectApplication {
 
     public static void main(String[] args) {
