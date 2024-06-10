@@ -10,6 +10,11 @@
     </parent>
 
     <artifactId>xy-club-application</artifactId>
-
+    <packaging>pom</packaging>
+    <modules>
+        <module>xy-club-application-controller</module>
+        <module>xu-club-application-mq</module>
+        <module>xy-club-application-job</module>
+    </modules>
 
 </project>

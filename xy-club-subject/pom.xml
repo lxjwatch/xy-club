@@ -13,9 +13,6 @@
         <module>xy-club-subject-api</module>
         <module>xy-club-common</module>
         <module>xy-club-application</module>
-        <module>xy-club-application/xy-club-application-controller</module>
-        <module>xy-club-application/xy-club-application-job</module>
-        <module>xy-club-application/xu-club-application-mq</module>
         <module>xy-club-infra</module>
         <module>xy-club-starter</module>
         <module>xy-club-domain</module>
