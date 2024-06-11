@@ -59,6 +59,6 @@ mybatis-plus:
   global-config:
     db-config:
       table-underline: false
-publicKey: MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAIG8/mcfSHs8onQPl7pJsTQZbTZik2haO5D618+hJKnM+DTWv7XpqxpARo7syByiwXv0pTAHWE48Bgyi5DeWu3ECAwEAAQ==
+#publicKey: MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAIG8/mcfSHs8onQPl7pJsTQZbTZik2haO5D618+hJKnM+DTWv7XpqxpARo7syByiwXv0pTAHWE48Bgyi5DeWu3ECAwEAAQ==
 logging:
   config: classpath:log4j2-spring.xml
