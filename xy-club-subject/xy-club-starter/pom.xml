@@ -44,7 +44,7 @@
         </dependency>
         <dependency>
             <groupId>com.xxxy.subject.mq</groupId>
-            <artifactId>xu-club-application-mq</artifactId>
+            <artifactId>xy-club-application-mq</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
 <!--        <dependency>-->
