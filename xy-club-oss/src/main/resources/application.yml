@@ -9,16 +9,16 @@ minio:
   secretKey: minioadmin
 
 
-nacos:
-  config:
-    secret-key: nacos
-    access-key: nacos
-    server-addr: http://116.198.217.150:8848/
-    data-id: xy-club-oss
-    timeout: 5000
-    group: DEFAULT_GROUP
-    type: yaml
-    auto-refresh: true
-    remote-first: true
-    bootstrap:
-      enable: true
+#nacos:
+#  config:
+#    secret-key: nacos
+#    access-key: nacos
+#    server-addr: http://116.198.217.150:8848/
+#    data-id: xy-club-oss
+#    group: DEFAULT_GROUP
+#    type: yaml
+#    auto-refresh: true
+##    enable-remote-sync-config: true
+#    remote-first: true
+#    bootstrap:
+#      enable: true

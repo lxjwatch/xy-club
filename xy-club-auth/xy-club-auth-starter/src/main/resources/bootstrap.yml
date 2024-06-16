@@ -1,6 +1,6 @@
 spring:
   application:
-    name: xy-club-oss
+    name: xy-club-auth
   profiles:
     active: dev
   cloud:

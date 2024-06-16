@@ -1,22 +1,21 @@
-package com.xxxy.oss;
+package com.xxxy.club.gateway;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.context.annotation.ComponentScan;
 
 /**
- * oss服务启动器
+ * 网关启动器
  * 
- * @author: lxj
+ * @author: ChickenWing
  * @date: 2023/10/11
  */
 @SpringBootApplication
 @ComponentScan("com.xxxy")
-public class OssApplication {
+public class GatewayApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(OssApplication.class);
+        SpringApplication.run(GatewayApplication.class);
     }
 
 }

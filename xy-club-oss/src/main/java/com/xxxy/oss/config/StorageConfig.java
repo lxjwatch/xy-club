@@ -19,13 +19,15 @@ import org.springframework.context.annotation.Configuration;
 @RefreshScope
 public class StorageConfig {
 
-    @NacosValue(value = "${storage.service.type}", autoRefreshed = true)
+    @Value("${storage.service.type}")
     private String storageType;
+
 
 
     @Bean
     @RefreshScope
     public StorageAdapter storageService() {
+        System.out.println(storageType);
         if ("minio".equals(storageType)) {
             return new MinioStorageAdapter();
         } else if ("aliyun".equals(storageType)) {
