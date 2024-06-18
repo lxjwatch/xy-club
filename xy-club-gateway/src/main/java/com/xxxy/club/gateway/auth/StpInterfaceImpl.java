@@ -7,10 +7,9 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * 自定义权限验证接口扩展
- *
- * @author: ChickenWing
- * @date: 2023/10/28
+ * 自定义权限验证接口扩展*
+ * &#064;author:  ChickenWing
+ * &#064;date:  2023/10/28
  */
 @Component
 public class StpInterfaceImpl implements StpInterface {
@@ -22,7 +21,7 @@ public class StpInterfaceImpl implements StpInterface {
         // 2、redis缓存
         // 3、redis缓存，没有的话，去调用我们的微服务去获取
         List<String> permissionList = new LinkedList<>();
-        permissionList.add("subject:add");
+        permissionList.add("subject:adds");
         return permissionList;
     }
 
