@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisProjectProfileManager">
+    <option name="PROJECT_PROFILE" />
+    <option name="USE_PROJECT_LEVEL_SETTINGS" value="false" />
+    <list size="0" />
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/asyncTool/pom.xml" />
+        <option value="$PROJECT_DIR$/jc-club-wx/pom.xml" />
+        <option value="$PROJECT_DIR$/jc-club-gen/pom.xml" />
+        <option value="$PROJECT_DIR$/jc-club-oss/pom.xml" />
+        <option value="$PROJECT_DIR$/jc-club-auth/pom.xml" />
+        <option value="$PROJECT_DIR$/jc-club-circle/pom.xml" />
+        <option value="$PROJECT_DIR$/jc-club-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/jc-club-subject/pom.xml" />
+        <option value="$PROJECT_DIR$/jc-club-practice/pom.xml" />
+        <option value="$PROJECT_DIR$/jc-club-interview/pom.xml" />
+        <option value="$PROJECT_DIR$/jc-club-common-starter/pom.xml" />
+        <option value="$PROJECT_DIR$/xy-club-gen/pom.xml" />
+        <option value="$PROJECT_DIR$/xy-club-circle/pom.xml" />
+        <option value="$PROJECT_DIR$/xy-club-interview/jc-club-interview-server/pom.xml" />
+        <option value="$PROJECT_DIR$/xy-club-wx/pom.xml" />
+        <option value="$PROJECT_DIR$/xy-club-interview/xy-club-interview-server/pom.xml" />
+        <option value="$PROJECT_DIR$/xy-club-auth/pom.xml" />
+        <option value="$PROJECT_DIR$/xy-club-common-starter/pom.xml" />
+        <option value="$PROJECT_DIR$/xy-club-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/xy-club-interview/pom.xml" />
+        <option value="$PROJECT_DIR$/xy-club-oss/pom.xml" />
+        <option value="$PROJECT_DIR$/xy-club-practice/pom.xml" />
+        <option value="$PROJECT_DIR$/xy-club-subject/pom.xml" />
+        <option value="$PROJECT_DIR$/xy-club-auth/xy-club-auth-application/jc-club-auth-application-controller/pom.xml" />
+        <option value="$PROJECT_DIR$/xy-club-auth/xy-club-auth-application/jc-club-auth-application-job/pom.xml" />
+        <option value="$PROJECT_DIR$/xy-club-auth/xy-club-auth-application/jc-club-auth-application-mq/pom.xml" />
+        <option value="$PROJECT_DIR$/xy-club-subject/xy-club-application/jc-club-application-mq/pom.xml" />
+        <option value="$PROJECT_DIR$/xy-club-subject/xy-club-application/jc-club-application-job/pom.xml" />
+        <option value="$PROJECT_DIR$/xy-club-subject/xy-club-application/jc-club-application-controller/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+  <component name="SuppressionsComponent">
+    <option name="suppComments" value="[]" />
+  </component>
+</project>

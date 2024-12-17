@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="xy-club-wx" />
+        <module name="xy-club-circle-server" />
+        <module name="xy-club-circle-api" />
+        <module name="asyncTool" />
+        <module name="easy-gen-code-spring-boot-starter" />
+        <module name="xy-club-practice-server" />
+        <module name="xy-club-application-mq" />
+        <module name="xy-club-auth-api" />
+        <module name="xy-club-application-job" />
+        <module name="xy-club-auth-application-controller" />
+        <module name="xy-club-gen" />
+        <module name="xy-club-oss" />
+        <module name="xy-club-subject-api" />
+        <module name="xy-club-application-controller" />
+        <module name="xy-club-gateway" />
+        <module name="xy-club-auth-application-mq" />
+        <module name="xy-club-practice-api" />
+        <module name="xy-club-auth-infra" />
+        <module name="xy-club-auth-application-job" />
+        <module name="xy-club-domain" />
+        <module name="xy-club-starter" />
+        <module name="xy-club-infra" />
+        <module name="xy-club-common" />
+        <module name="xy-club-auth-starter" />
+        <module name="xy-club-auth-common" />
+        <module name="xy-club-auth-domain" />
+        <module name="xy-club-interview-api" />
+        <module name="xy-club-interview-server" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="jc-club-application" target="1.5" />
+      <module name="jc-club-application-controller" target="1.8" />
+      <module name="jc-club-application-job" target="1.8" />
+      <module name="jc-club-application-mq" target="1.8" />
+      <module name="jc-club-auth-api" target="1.8" />
+      <module name="jc-club-auth-application" target="1.8" />
+      <module name="jc-club-auth-application-controller" target="1.8" />
+      <module name="jc-club-auth-application-job" target="1.8" />
+      <module name="jc-club-auth-application-mq" target="1.8" />
+      <module name="jc-club-auth-common" target="1.8" />
+      <module name="jc-club-auth-domain" target="1.8" />
+      <module name="jc-club-auth-infra" target="1.8" />
+      <module name="jc-club-auth-starter" target="1.8" />
+      <module name="jc-club-common" target="1.8" />
+      <module name="jc-club-domain" target="1.8" />
+      <module name="jc-club-infra" target="1.8" />
+      <module name="jc-club-interview-api" target="1.8" />
+      <module name="jc-club-practice-api" target="1.8" />
+      <module name="jc-club-practice-server" target="1.8" />
+      <module name="jc-club-starter" target="1.8" />
+      <module name="jc-club-subject-api" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="xy-club-gen" options="-parameters" />
+    </option>
+  </component>
+</project>
