@@ -4,7 +4,6 @@ import com.alibaba.fastjson.JSON;
 import com.study.subject.common.enums.CategoryTypeEnum;
 import com.study.subject.common.enums.IsDeletedFlagEnum;
 import com.study.subject.domain.convert.SubjectLabelConverter;
-import com.study.subject.domain.convert.SubjectLabelConverterImpl;
 import com.study.subject.domain.entity.SubjectLabelBO;
 import com.study.subject.domain.service.SubjectLabelDomainService;
 import com.study.subject.infra.basic.entity.SubjectCategory;

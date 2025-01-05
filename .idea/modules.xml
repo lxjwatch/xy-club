@@ -3,16 +3,27 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/xy-club.iml" filepath="$PROJECT_DIR$/.idea/xy-club.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xy-club-subject/xy-club-application/xy-club-application.iml" filepath="$PROJECT_DIR$/xy-club-subject/xy-club-application/xy-club-application.iml" />
       <module fileurl="file://$PROJECT_DIR$/xy-club-auth/xy-club-auth.iml" filepath="$PROJECT_DIR$/xy-club-auth/xy-club-auth.iml" />
       <module fileurl="file://$PROJECT_DIR$/xy-club-auth/xy-club-auth-api/xy-club-auth-api.iml" filepath="$PROJECT_DIR$/xy-club-auth/xy-club-auth-api/xy-club-auth-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/xy-club-auth/xy-club-auth-common/xy-club-auth-common.iml" filepath="$PROJECT_DIR$/xy-club-auth/xy-club-auth-common/xy-club-auth-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/xy-club-auth/xy-club-auth-domain/xy-club-auth-domain.iml" filepath="$PROJECT_DIR$/xy-club-auth/xy-club-auth-domain/xy-club-auth-domain.iml" />
       <module fileurl="file://$PROJECT_DIR$/xy-club-auth/xy-club-auth-infra/xy-club-auth-infra.iml" filepath="$PROJECT_DIR$/xy-club-auth/xy-club-auth-infra/xy-club-auth-infra.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xy-club-auth/xy-club-auth-starter/xy-club-auth-starter.iml" filepath="$PROJECT_DIR$/xy-club-auth/xy-club-auth-starter/xy-club-auth-starter.iml" />
       <module fileurl="file://$PROJECT_DIR$/xy-club-circle/xy-club-circle.iml" filepath="$PROJECT_DIR$/xy-club-circle/xy-club-circle.iml" />
       <module fileurl="file://$PROJECT_DIR$/xy-club-circle/xy-club-circle-server/xy-club-circle-server.iml" filepath="$PROJECT_DIR$/xy-club-circle/xy-club-circle-server/xy-club-circle-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xy-club-common-starter/xy-club-common-starter.iml" filepath="$PROJECT_DIR$/xy-club-common-starter/xy-club-common-starter.iml" />
       <module fileurl="file://$PROJECT_DIR$/xy-club-subject/xy-club-domain/xy-club-domain.iml" filepath="$PROJECT_DIR$/xy-club-subject/xy-club-domain/xy-club-domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xy-club-gateway/xy-club-gateway.iml" filepath="$PROJECT_DIR$/xy-club-gateway/xy-club-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xy-club-subject/xy-club-infra/xy-club-infra.iml" filepath="$PROJECT_DIR$/xy-club-subject/xy-club-infra/xy-club-infra.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xy-club-interview/xy-club-interview.iml" filepath="$PROJECT_DIR$/xy-club-interview/xy-club-interview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xy-club-interview/xy-club-interview-server/xy-club-interview-server.iml" filepath="$PROJECT_DIR$/xy-club-interview/xy-club-interview-server/xy-club-interview-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xy-club-oss/xy-club-oss.iml" filepath="$PROJECT_DIR$/xy-club-oss/xy-club-oss.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xy-club-practice/xy-club-practice.iml" filepath="$PROJECT_DIR$/xy-club-practice/xy-club-practice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xy-club-practice/xy-club-practice-server/xy-club-practice-server.iml" filepath="$PROJECT_DIR$/xy-club-practice/xy-club-practice-server/xy-club-practice-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/xy-club-subject/xy-club-starter/xy-club-starter.iml" filepath="$PROJECT_DIR$/xy-club-subject/xy-club-starter/xy-club-starter.iml" />
       <module fileurl="file://$PROJECT_DIR$/xy-club-subject/xy-club-subject.iml" filepath="$PROJECT_DIR$/xy-club-subject/xy-club-subject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xy-club-wx/xy-club-wx.iml" filepath="$PROJECT_DIR$/xy-club-wx/xy-club-wx.iml" />
     </modules>
   </component>
 </project>

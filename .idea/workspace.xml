@@ -4,7 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8783bb8e-f01b-4318-bb9a-8a2ec429bba5" name="更改" comment="" />
+    <list default="true" id="8783bb8e-f01b-4318-bb9a-8a2ec429bba5" name="更改" comment="初稿">
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xy-club-auth/xy-club-auth-starter/xy-club-auth-starter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/xy-club-auth/xy-club-auth-starter/xy-club-auth-starter.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xy-club-circle/xy-club-circle-api/xy-club-circle-api.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xy-club-common-starter/easy-gen-code-spring-boot-starter/easy-gen-code-spring-boot-starter.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xy-club-common-starter/xy-club-common-starter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/xy-club-common-starter/xy-club-common-starter.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xy-club-gateway/xy-club-gateway.iml" beforeDir="false" afterPath="$PROJECT_DIR$/xy-club-gateway/xy-club-gateway.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xy-club-gen/xy-club-gen.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xy-club-interview/xy-club-interview-api/xy-club-interview-api.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xy-club-interview/xy-club-interview-server/xy-club-interview-server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/xy-club-interview/xy-club-interview-server/xy-club-interview-server.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xy-club-interview/xy-club-interview.iml" beforeDir="false" afterPath="$PROJECT_DIR$/xy-club-interview/xy-club-interview.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xy-club-oss/xy-club-oss.iml" beforeDir="false" afterPath="$PROJECT_DIR$/xy-club-oss/xy-club-oss.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xy-club-practice/xy-club-practice-api/xy-club-practice-api.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xy-club-practice/xy-club-practice-server/xy-club-practice-server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/xy-club-practice/xy-club-practice-server/xy-club-practice-server.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xy-club-practice/xy-club-practice.iml" beforeDir="false" afterPath="$PROJECT_DIR$/xy-club-practice/xy-club-practice.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xy-club-subject/xy-club-application/xy-club-application.iml" beforeDir="false" afterPath="$PROJECT_DIR$/xy-club-subject/xy-club-application/xy-club-application.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xy-club-subject/xy-club-common/xy-club-common.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xy-club-subject/xy-club-domain/src/main/java/com/study/subject/domain/service/impl/SubjectLabelDomainServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/xy-club-subject/xy-club-domain/src/main/java/com/study/subject/domain/service/impl/SubjectLabelDomainServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xy-club-subject/xy-club-infra/xy-club-infra.iml" beforeDir="false" afterPath="$PROJECT_DIR$/xy-club-subject/xy-club-infra/xy-club-infra.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xy-club-subject/xy-club-subject-api/xy-club-subject-api.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xy-club-wx/xy-club-wx.iml" beforeDir="false" afterPath="$PROJECT_DIR$/xy-club-wx/xy-club-wx.iml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,9 +39,17 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="customMavenHome" value="D:\apache-maven-3.6.3" />
+        <option name="mavenHomeTypeForPersistence" value="CUSTOM" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2qLHFa5geMwt0vfOrkSjlzhooqB" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -38,7 +69,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "application.passwordSafe",
+    "settings.editor.selected.configurable": "MavenSettings",
     "spring.configuration.checksum": "63bd279c3c7baf745b7cb4374cfd8e8b",
     "vue.rearranger.settings.migration": "true"
   }
@@ -52,7 +83,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.WxApplication">
+  <component name="RunManager" selected="Spring Boot.SubjectApplication (1)">
     <configuration name="AuthApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="xy-club-auth-starter" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.study.auth.AuthApplication" />
@@ -148,11 +179,30 @@
       <updated>1734434834577</updated>
       <workItem from="1734434835926" duration="887000" />
       <workItem from="1734435765611" duration="396000" />
-      <workItem from="1734443309300" duration="1223000" />
+      <workItem from="1734443309300" duration="3216000" />
+      <workItem from="1734501727264" duration="1409000" />
+      <workItem from="1736055930361" duration="1359000" />
     </task>
+    <task id="LOCAL-00001" summary="初稿">
+      <option name="closed" value="true" />
+      <created>1734448650318</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1734448650318</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="初稿" />
+    <option name="LAST_COMMIT_MESSAGE" value="初稿" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
