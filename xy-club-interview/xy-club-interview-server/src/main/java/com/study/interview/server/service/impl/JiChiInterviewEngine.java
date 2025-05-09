@@ -99,10 +99,14 @@ public class JiChiInterviewEngine implements InterviewEngine {
     @Override
     public InterviewResultVO submit(InterviewSubmitReq req) {
 
+        //获取问题列表
         List<InterviewSubmitReq.Submit> submits = req.getQuestionList();
+        //计算总分
         double total = submits.stream().mapToDouble(InterviewSubmitReq.Submit::getUserScore).sum();
         double avg = total / submits.size();
+        //计算平均分
         String avtTips = EvaluateUtils.avgEvaluate(avg);
+        //计算提示
         String tips = submits.stream().map(item -> {
             String keyWord = item.getLabelName();
             String evaluate = EvaluateUtils.evaluate(item.getUserScore());
