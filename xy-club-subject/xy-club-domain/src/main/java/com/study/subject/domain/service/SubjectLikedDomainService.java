@@ -7,7 +7,7 @@ import com.study.subject.domain.entity.SubjectLikedBO;
 /**
  * 题目点赞表 领域service
  *
- * @author stduy
+ * @author study
  * @since 2024-01-07 23:08:45
  */
 public interface SubjectLikedDomainService {

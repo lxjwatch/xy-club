@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.stduy.auth.infra.basic.mapper.AuthRoleDao">
+<mapper namespace="com.study.auth.infra.basic.mapper.AuthRoleDao">
 
     <resultMap type="com.study.auth.infra.basic.entity.AuthRole" id="AuthRoleMap">
         <result property="id" column="id" jdbcType="INTEGER"/>

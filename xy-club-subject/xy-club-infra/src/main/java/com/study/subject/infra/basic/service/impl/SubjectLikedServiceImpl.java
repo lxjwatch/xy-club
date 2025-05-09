@@ -14,7 +14,7 @@ import java.util.Objects;
 /**
  * 题目点赞表 表服务实现类
  *
- * @author stduy
+ * @author study
  * @since 2024-01-07 23:08:45
  */
 @Service("SubjectLikedService")

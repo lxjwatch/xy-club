@@ -10,7 +10,6 @@ spring:
     druid:
       initial-size: 20
       min-idle: 20
-      connectionProperties: config.decrypt=true;config.decrypt.key=${publicKey};
       max-active: 100
       max-wait: 60000
       stat-view-servlet:
@@ -48,6 +47,5 @@ spring:
         max-idle: 10
         # 连接池中的最小空闲连接
         min-idle: 0
-publicKey: MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAMJzo9TiSuOGAMR2Zma25lWdtR1oxq6RcZYnWE9vcYLNKxUOkBlvSfMrbS25KtlJi+hIzikfCoyTDB0VI5gB3Q8CAwEAAQ==
 logging:
   config: classpath:log4j2-spring.xml

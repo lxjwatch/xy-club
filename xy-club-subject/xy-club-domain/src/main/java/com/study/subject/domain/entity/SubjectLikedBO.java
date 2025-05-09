@@ -9,7 +9,7 @@ import java.util.Date;
 /**
  * 题目点赞表 bo
  *
- * @author stduy
+ * @author study
  * @since 2024-01-07 23:08:45
  */
 @Data

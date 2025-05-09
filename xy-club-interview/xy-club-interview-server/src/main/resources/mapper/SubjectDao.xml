@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.stduy.interview.server.dao.SubjectDao">
+<mapper namespace="com.study.interview.server.dao.SubjectDao">
 
     <select id="listAllLabel" resultType="com.study.interview.server.entity.po.SubjectLabel">
         select *

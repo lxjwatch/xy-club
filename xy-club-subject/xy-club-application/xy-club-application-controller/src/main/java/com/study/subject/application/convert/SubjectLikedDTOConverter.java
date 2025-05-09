@@ -8,7 +8,7 @@ import org.mapstruct.factory.Mappers;
 /**
  * 题目点赞表 dto转换器
  *
- * @author stduy
+ * @author study
  * @since 2024-01-07 23:08:45
  */
 @Mapper

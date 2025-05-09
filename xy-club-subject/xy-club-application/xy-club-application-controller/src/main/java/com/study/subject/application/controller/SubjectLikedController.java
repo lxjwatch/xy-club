@@ -20,7 +20,7 @@ import javax.annotation.Resource;
 /**
  * 题目点赞表 controller
  *
- * @author stduy
+ * @author study
  * @since 2024-01-07 23:08:45
  */
 @RestController

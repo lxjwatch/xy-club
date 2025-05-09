@@ -28,7 +28,7 @@ import java.util.Objects;
 /**
  * 题目点赞表 领域service实现了
  *
- * @author stduy
+ * @author study
  * @since 2024-01-07 23:08:45
  */
 @Service

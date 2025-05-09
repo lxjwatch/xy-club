@@ -10,7 +10,6 @@ spring:
     druid:
       initial-size: 20
       min-idle: 20
-      connectionProperties: config.decrypt=true;config.decrypt.key=${publicKey};
       max-active: 100
       max-wait: 60000
       stat-view-servlet:

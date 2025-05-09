@@ -14,7 +14,7 @@ import org.springframework.context.annotation.ComponentScan;
  */
 @SpringBootApplication
 @ComponentScan("com.study")
-@MapperScan("com.stduy.**.mapper")
+@MapperScan("com.study.**.mapper")
 @EnableFeignClients(basePackages = "com.study")
 public class SubjectApplication {
 
