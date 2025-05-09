@@ -19,7 +19,7 @@ public class SubscribeMsgHandler implements WxChatMsgHandler {
         log.info("触发用户关注事件！");
         String fromUserName = messageMap.get("FromUserName");
         String toUserName = messageMap.get("ToUserName");
-        String subscribeContent = "感谢您的关注，我是经典鸡翅！欢迎来学习从0到1社区项目";
+        String subscribeContent = "感谢您的关注，这里是信息学院计算机面试学习平台！欢迎学习";
         String content = "<xml>\n" +
                 "  <ToUserName><![CDATA[" + fromUserName + "]]></ToUserName>\n" +
                 "  <FromUserName><![CDATA[" + toUserName + "]]></FromUserName>\n" +

@@ -68,7 +68,7 @@ public class CallBackController {
             return "unknown";
         }
         String replyContent = wxChatMsgHandler.dealMsg(messageMap);
-        log.info("replyContent:{}", replyContent);
+        log.info("replyContent:{} ", replyContent);
         return replyContent;
     }
 
