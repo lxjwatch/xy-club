@@ -17,7 +17,7 @@ import java.util.function.Function;
 /**
  * 缓存工具类
  *
- * @author: ChickenWing
+ * @author: lxj
  * @date: 2023/12/3
  */
 @Component

@@ -14,7 +14,7 @@ import java.util.Date;
  * 动态信息
  * </p>
  *
- * @author ChickenWing
+ * @author lxj
  * @since 2024/05/16
  */
 @Getter

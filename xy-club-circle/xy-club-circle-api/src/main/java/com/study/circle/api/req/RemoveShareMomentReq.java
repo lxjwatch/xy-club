@@ -10,7 +10,7 @@ import java.io.Serializable;
  * 鸡圈内容信息
  * </p>
  *
- * @author ChickenWing
+ * @author lxj
  * @since 2024/05/16
  */
 @Getter

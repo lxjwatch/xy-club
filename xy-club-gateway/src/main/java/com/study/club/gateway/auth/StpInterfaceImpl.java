@@ -18,7 +18,7 @@ import java.util.stream.Collectors;
 /**
  * 自定义权限验证接口扩展
  *
- * @author: ChickenWing
+ * @author: lxj
  * @date: 2023/10/28
  */
 @Component

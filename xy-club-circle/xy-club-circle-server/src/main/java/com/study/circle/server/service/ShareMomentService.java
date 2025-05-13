@@ -13,7 +13,7 @@ import com.study.circle.server.entity.po.ShareMoment;
  * 动态信息 服务类
  * </p>
  *
- * @author ChickenWing
+ * @author lxj
  * @since 2024/05/16
  */
 public interface ShareMomentService extends IService<ShareMoment> {

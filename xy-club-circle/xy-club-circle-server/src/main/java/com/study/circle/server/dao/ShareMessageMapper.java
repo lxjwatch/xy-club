@@ -9,7 +9,7 @@ import com.study.circle.server.entity.po.ShareMessage;
  * 消息表 Mapper 接口
  * </p>
  *
- * @author ChickenWing
+ * @author lxj
  * @since 2024/05/18
  */
 public interface ShareMessageMapper extends BaseMapper<ShareMessage> {

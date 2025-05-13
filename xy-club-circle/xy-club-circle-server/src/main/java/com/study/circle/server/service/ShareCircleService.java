@@ -15,7 +15,7 @@ import java.util.List;
  * 圈子信息 服务类
  * </p>
  *
- * @author ChickenWing
+ * @author lxj
  * @since 2024/05/16
  */
 public interface ShareCircleService extends IService<ShareCircle> {

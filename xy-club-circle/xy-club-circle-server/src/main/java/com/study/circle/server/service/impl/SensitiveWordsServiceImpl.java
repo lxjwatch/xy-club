@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
  * 敏感词表 服务实现类
  * </p>
  *
- * @author ChickenWing
+ * @author lxj
  * @since 2024/05/17
  */
 @Service

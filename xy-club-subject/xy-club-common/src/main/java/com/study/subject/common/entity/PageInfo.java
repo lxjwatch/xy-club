@@ -7,7 +7,7 @@ import java.io.Serializable;
 /**
  * 分页请求实体
  *
- * @author: ChickenWing
+ * @author: lxj
  * @date: 2023/10/5
  */
 @Data

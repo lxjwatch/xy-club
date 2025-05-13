@@ -13,7 +13,7 @@ import java.io.Serializable;
  * 敏感词表
  * </p>
  *
- * @author ChickenWing
+ * @author lxj
  * @since 2024/05/17
  */
 @Getter

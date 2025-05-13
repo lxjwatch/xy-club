@@ -5,7 +5,7 @@ import com.study.practice.server.config.context.LoginContextHolder;
 /**
  * 用户登录util
  *
- * @author: ChickenWing
+ * @author: lxj
  * @date: 2023/11/26
  */
 public class LoginUtil {

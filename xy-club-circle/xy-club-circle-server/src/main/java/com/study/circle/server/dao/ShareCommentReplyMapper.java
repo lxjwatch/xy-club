@@ -9,7 +9,7 @@ import com.study.circle.server.entity.po.ShareCommentReply;
  * 评论及回复信息 Mapper 接口
  * </p>
  *
- * @author ChickenWing
+ * @author lxj
  * @since 2024/05/16
  */
 public interface ShareCommentReplyMapper extends BaseMapper<ShareCommentReply> {

@@ -16,7 +16,7 @@ import java.util.stream.Collectors;
 /**
  * minio文件操作工具
  *
- * @author: ChickenWing
+ * @author: lxj
  * @date: 2023/10/11
  */
 @Component

@@ -5,7 +5,7 @@ import com.study.auth.domain.entity.AuthRolePermissionBO;
 /**
  * 角色领域service
  * 
- * @author: ChickenWing
+ * @author: lxj
  * @date: 2023/11/1
  */
 public interface AuthRolePermissionDomainService {

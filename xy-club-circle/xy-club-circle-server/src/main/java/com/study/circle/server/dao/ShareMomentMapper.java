@@ -9,7 +9,7 @@ import org.apache.ibatis.annotations.Param;
  * 动态信息 Mapper 接口
  * </p>
  *
- * @author ChickenWing
+ * @author lxj
  * @since 2024/05/16
  */
 public interface ShareMomentMapper extends BaseMapper<ShareMoment> {

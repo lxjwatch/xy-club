@@ -16,7 +16,7 @@ import java.util.Objects;
 @Slf4j
 public class CallBackController {
 
-    private static final String token = "adwidhaidwoaid";
+    private static final String token = "lxjlxjyaomian";
 
     @Resource
     private WxChatMsgFactory wxChatMsgFactory;

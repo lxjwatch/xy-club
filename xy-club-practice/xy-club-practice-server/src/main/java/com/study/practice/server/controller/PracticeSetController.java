@@ -23,7 +23,7 @@ import java.util.Objects;
 /**
  * 练习套卷controller
  *
- * @author: ChickenWing
+ * @author: lxj
  * @date: 2024/3/7
  */
 @RestController

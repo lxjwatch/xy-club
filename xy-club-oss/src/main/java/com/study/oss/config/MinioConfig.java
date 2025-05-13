@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
 /**
  * minio配置管理
  *
- * @author: ChickenWing
+ * @author: lxj
  * @date: 2023/10/11
  */
 @Configuration

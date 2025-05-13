@@ -16,7 +16,7 @@ import reactor.core.publisher.Mono;
 /**
  * 网关全局异常处理
  *
- * @author: ChickenWing
+ * @author: lxj
  * @date: 2023/10/28
  */
 @Component

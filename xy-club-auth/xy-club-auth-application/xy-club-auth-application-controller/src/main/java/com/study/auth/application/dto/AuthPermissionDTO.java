@@ -7,7 +7,7 @@ import java.io.Serializable;
 /**
  * 权限dto
  * 
- * @author: ChickenWing
+ * @author: lxj
  * @date: 2023/11/3
  */
 @Data

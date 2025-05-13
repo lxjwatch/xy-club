@@ -21,7 +21,7 @@ import java.util.Objects;
  * 圈子信息 前端控制器
  * </p>
  *
- * @author ChickenWing
+ * @author lxj
  * @since 2024/05/16
  */
 @Slf4j

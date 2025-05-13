@@ -9,7 +9,7 @@ import org.springframework.context.annotation.ComponentScan;
 /**
  * 练习微服务启动类
  *
- * @author: ChickenWing
+ * @author: lxj
  * @date: 2024/3/2
  */
 @SpringBootApplication

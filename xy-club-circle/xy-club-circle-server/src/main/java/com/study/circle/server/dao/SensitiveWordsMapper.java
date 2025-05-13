@@ -8,7 +8,7 @@ import com.study.circle.server.entity.po.SensitiveWords;
  * 敏感词表 Mapper 接口
  * </p>
  *
- * @author ChickenWing
+ * @author lxj
  * @since 2024/05/17
  */
 public interface SensitiveWordsMapper extends BaseMapper<SensitiveWords> {

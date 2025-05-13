@@ -12,7 +12,7 @@ import com.study.circle.server.entity.po.ShareMessage;
  * 消息表 服务类
  * </p>
  *
- * @author ChickenWing
+ * @author lxj
  * @since 2024/05/18
  */
 public interface ShareMessageService extends IService<ShareMessage> {

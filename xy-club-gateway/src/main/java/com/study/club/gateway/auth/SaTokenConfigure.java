@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Configuration;
 /**
  * 权限认证的配置器
  *
- * @author: ChickenWing
+ * @author: lxj
  * @date: 2023/10/28
  */
 @Configuration

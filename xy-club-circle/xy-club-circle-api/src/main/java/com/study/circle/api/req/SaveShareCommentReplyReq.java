@@ -11,7 +11,7 @@ import java.util.List;
  * 评论及回复信息
  * </p>
  *
- * @author ChickenWing
+ * @author lxj
  * @since 2024/05/16
  */
 @Getter

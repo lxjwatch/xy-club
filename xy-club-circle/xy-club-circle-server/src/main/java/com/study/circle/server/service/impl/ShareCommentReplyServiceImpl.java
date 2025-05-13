@@ -40,7 +40,7 @@ import java.util.stream.Collectors;
  * 评论及回复信息 服务实现类
  * </p>
  *
- * @author ChickenWing
+ * @author lxj
  * @since 2024/05/16
  */
 @Service

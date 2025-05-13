@@ -5,7 +5,7 @@ import lombok.Getter;
 /**
  * 删除状态枚举
  * 
- * @author: ChickenWing
+ * @author: lxj
  * @date: 2023/10/3
  */
 @Getter

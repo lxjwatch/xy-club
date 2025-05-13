@@ -12,7 +12,7 @@ import java.util.Map;
  * 消息表
  * </p>
  *
- * @author ChickenWing
+ * @author lxj
  * @since 2024/05/18
  */
 @Getter

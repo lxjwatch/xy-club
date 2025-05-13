@@ -13,7 +13,7 @@ import java.util.Objects;
 /**
  * Feign请求拦截器
  *
- * @author: ChickenWing
+ * @author: lxj
  * @date: 2023/12/3
  */
 @Component

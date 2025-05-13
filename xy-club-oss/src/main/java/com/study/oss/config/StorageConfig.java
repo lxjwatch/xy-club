@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
 /**
  * 文件存储config
  *
- * @author: ChickenWing
+ * @author: lxj
  * @date: 2023/10/14
  */
 @Configuration

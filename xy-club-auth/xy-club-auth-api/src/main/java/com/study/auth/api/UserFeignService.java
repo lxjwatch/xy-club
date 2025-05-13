@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * 用户服务feign
  *
- * @author: ChickenWing
+ * @author: lxj
  * @date: 2023/12/3
  */
 @FeignClient("xy-club-auth-dev")

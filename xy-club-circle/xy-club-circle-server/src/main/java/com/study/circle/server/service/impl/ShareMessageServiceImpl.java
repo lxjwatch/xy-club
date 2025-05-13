@@ -32,7 +32,7 @@ import java.util.stream.Collectors;
  * 消息表 服务实现类
  * </p>
  *
- * @author ChickenWing
+ * @author lxj
  * @since 2024/05/18
  */
 @Service

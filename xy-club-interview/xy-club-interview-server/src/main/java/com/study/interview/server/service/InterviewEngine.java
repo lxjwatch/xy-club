@@ -14,7 +14,7 @@ import java.util.List;
  * 面试引擎
  * </p>
  *
- * @author ChickenWing
+ * @author lxj
  * @since 2024/05/16
  */
 public interface InterviewEngine {
