@@ -89,7 +89,7 @@ public class SubjectInfoDomainServiceImpl implements SubjectInfoDomainService {
         subjectInfoEs.setSubjectId(subjectInfo.getId());
         subjectInfoEs.setSubjectAnswer(subjectInfoBO.getSubjectAnswer());
         subjectInfoEs.setCreateTime(new Date().getTime());
-        subjectInfoEs.setCreateUser("鸡翅");
+        subjectInfoEs.setCreateUser("lxj");
         subjectInfoEs.setSubjectName(subjectInfo.getSubjectName());
         subjectInfoEs.setSubjectType(subjectInfo.getSubjectType());
         subjectEsService.insert(subjectInfoEs);
