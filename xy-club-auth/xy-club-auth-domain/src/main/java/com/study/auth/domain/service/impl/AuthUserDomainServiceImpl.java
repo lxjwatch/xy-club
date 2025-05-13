@@ -83,7 +83,7 @@ public class AuthUserDomainServiceImpl implements AuthUserDomainService {
             authUser.setAvatar("http://117.72.10.84:9000/user/icon/微信图片_20231203153718(1).png");
         }
         if (StringUtils.isBlank(authUser.getNickName())) {
-            authUser.setNickName("鸡翅粉丝");
+            authUser.setNickName("信息学院同学");
         }
         authUser.setStatus(AuthUserStatusEnum.OPEN.getCode());
         authUser.setIsDeleted(IsDeletedFlagEnum.UN_DELETED.getCode());

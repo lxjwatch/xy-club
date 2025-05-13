@@ -1,6 +1,6 @@
 spring:
   application:
-    name: xy-club-interview-dev
+    name: xy-club-interview
   profiles:
     active: dev
   cloud:

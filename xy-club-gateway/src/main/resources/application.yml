@@ -44,7 +44,7 @@ spring:
     # Redis数据库索引（默认为0）
     database: 1
     # Redis服务器地址
-    host: 116.198.217.150
+    host: 117.72.60.28
     # Redis服务器连接端口
     port: 6379
     # Redis服务器连接密码（默认为空）
@@ -76,4 +76,3 @@ sa-token:
   token-style: random-32
   # 是否输出操作日志
   is-log: true
-  token-prefix: jichi
