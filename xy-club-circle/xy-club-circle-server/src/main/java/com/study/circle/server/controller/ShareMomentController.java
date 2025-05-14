@@ -78,12 +78,12 @@ public class ShareMomentController {
     public Result<PageResult<ShareMomentVO>> getMoments(@RequestBody GetShareMomentReq req) {
         try {
             if (log.isInfoEnabled()) {
-                log.info("鸡圈内容入参{}", JSON.toJSONString(req));
+                log.info("圈内容入参{}", JSON.toJSONString(req));
             }
             Preconditions.checkArgument(!Objects.isNull(req), "参数不能为空！");
             PageResult<ShareMomentVO> result = shareMomentService.getMoments(req);
             if (log.isInfoEnabled()) {
-                log.info("鸡圈内容出参{}", JSON.toJSONString(result));
+                log.info("圈内容出参{}", JSON.toJSONString(result));
             }
             return Result.ok(result);
         } catch (IllegalArgumentException e) {
@@ -103,21 +103,21 @@ public class ShareMomentController {
     public Result<Boolean> remove(@RequestBody RemoveShareMomentReq req) {
         try {
             if (log.isInfoEnabled()) {
-                log.info("删除鸡圈内容入参{}", JSON.toJSONString(req));
+                log.info("删除圈内容入参{}", JSON.toJSONString(req));
             }
             Preconditions.checkArgument(Objects.nonNull(req), "参数不能为空！");
             Preconditions.checkArgument(Objects.nonNull(req.getId()), "内容ID不能为空！");
             Boolean result = shareMomentService.removeMoment(req);
             if (log.isInfoEnabled()) {
-                log.info("删除鸡圈内容{}", JSON.toJSONString(result));
+                log.info("删除圈内容{}", JSON.toJSONString(result));
             }
             return Result.ok(result);
         } catch (IllegalArgumentException e) {
             log.error("参数异常！错误原因{}", e.getMessage(), e);
             return Result.fail(e.getMessage());
         } catch (Exception e) {
-            log.error("删除鸡圈内容异常！错误原因{}", e.getMessage(), e);
-            return Result.fail("删除鸡圈内容异常！");
+            log.error("删除圈内容异常！错误原因{}", e.getMessage(), e);
+            return Result.fail("删除圈内容异常！");
         }
     }
 

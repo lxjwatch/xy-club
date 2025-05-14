@@ -10,7 +10,7 @@ spring:
     druid:
       initial-size: 20
       min-idle: 20
-      max-active: 100
+      max-active: 200
       max-wait: 60000
       stat-view-servlet:
         enabled: true
